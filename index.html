@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZynBox — Upload Cepat & Aman</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🐱 ZynBox</h1>
+      <p>Upload file cepat & aman, powered by <strong>Catbox API</strong></p>
+    </header>
+
+    <main>
+      <div class="upload-box" id="dropZone">
+        <p>Tarik & lepas file di sini, atau</p>
+        <label for="fileInput" class="btn">Pilih File</label>
+        <input type="file" id="fileInput" multiple hidden />
+      </div>
+
+      <div id="progressContainer" class="hidden">
+        <div class="progress-bar">
+          <div id="progressBar"></div>
+        </div>
+        <p id="progressText">Mengunggah...</p>
+      </div>
+
+      <div id="resultContainer" class="hidden">
+        <h3>Hasil Upload:</h3>
+        <div id="resultList"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Created by <strong>Zein73</strong> 🦁 | Powered by Catbox</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
